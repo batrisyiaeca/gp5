@@ -14,6 +14,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Registration extends AppCompatActivity {
 
@@ -44,8 +45,7 @@ public class Registration extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
 
                             if(task.isSuccessful()) {
-                                Toast.makeText(Registration.this, "Registration Successful", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(Registration.this, MainActivity.class));
+                                sendEmailVerification();
                             }else{
                                 Toast.makeText(Registration.this, "Registration Failed", Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(Registration.this, MainActivity.class));
@@ -90,4 +90,24 @@ public class Registration extends AppCompatActivity {
 
         return result;
     }
+
+    private void sendEmailVerification() {
+        FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
+        if (firebaseUser != null) {
+            firebaseUser.sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
+                @Override
+                public void onComplete(@NonNull Task<Void> task) {
+                    if (task.isSuccessful()) {
+                        Toast.makeText(Registration.this, "Succesfully Registered,Verification mail send!", Toast.LENGTH_SHORT).show();
+                        firebaseAuth.signOut();
+                        finish();
+                        startActivity(new Intent(Registration.this, MainActivity.class));
+                    } else {
+                        Toast.makeText(Registration.this, "Verification mail hasn'nt been sent!", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
+        }
+    }
+
 }
