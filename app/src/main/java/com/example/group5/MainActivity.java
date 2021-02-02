@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView Register;
     private FirebaseAuth firebaseAuth;
     private ProgressDialog progressDialog;
+    private TextView forgotPassword;
 
     private int counter = 3;
 
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         Attempts = (TextView)findViewById(R.id.t_attempts);
         Login    = (Button)findViewById(R.id.btn_Login);
         Register = (TextView)findViewById(R.id.t_signup);
+        forgotPassword = (TextView)findViewById(R.id.tvForgotPassword);
 
         Attempts.setText("No of attempts remaining: 3");
 
@@ -66,6 +68,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 startActivity(new Intent(MainActivity.this, Registration.class));
+            }
+        });
+
+        forgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,PasswordActivity.class));
             }
         });
     }

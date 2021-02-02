@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "895141871555",
+    "project_id": "four-seasons-e4e78",
+    "storage_bucket": "four-seasons-e4e78.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895141871555:android:94099b02886e1a6f9e8776",
+        "android_client_info": {
+          "package_name": "com.example.group5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895141871555-5b9a5vk31ebbe3b8pmqqhij0oehiv5co.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeELPg_Lh0Nc7oRdObYb-j0xUo1oUCjuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "895141871555-5b9a5vk31ebbe3b8pmqqhij0oehiv5co.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
