@@ -4,69 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Registration">
 
     <EditText
-        android:id="@+id/t_name"
+        android:id="@+id/t_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Name"
+        android:hint="username"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintVertical_bias="0.339" />
 
     <EditText
-        android:id="@+id/t_password"
+        android:id="@+id/t_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Password"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_username"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <EditText
+        android:id="@+id/t_password2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/t_name"
-        app:layout_constraintVertical_bias="0.201" />
+        app:layout_constraintTop_toBottomOf="@+id/t_email"
+        app:layout_constraintVertical_bias="0.157" />
 
     <Button
-        android:id="@+id/btn_Login"
+        android:id="@+id/btn_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="Register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/t_password"
-        app:layout_constraintVertical_bias="0.215" />
+        app:layout_constraintTop_toBottomOf="@+id/t_password2"
+        app:layout_constraintVertical_bias="0.308" />
 
     <TextView
-        android:id="@+id/t_attempts"
+        android:id="@+id/t_login2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="No of attempts remaining: "
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Login"
-        app:layout_constraintVertical_bias="0.196" />
-
-    <TextView
-        android:id="@+id/t_signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Don't have account? Sign up now!"
-        android:textSize="18sp"
+        android:text="Already Sign in? Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/t_attempts" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_register" />
 </androidx.constraintlayout.widget.ConstraintLayout>
