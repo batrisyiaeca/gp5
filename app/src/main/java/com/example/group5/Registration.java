@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,6 +16,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Registration extends AppCompatActivity {
 
@@ -83,12 +86,12 @@ public class Registration extends AppCompatActivity {
 
     private Boolean validate()
     {
-        Boolean result = false;
         name = userName.getText().toString();
         password = userPassword.getText().toString();
         email = userEmail.getText().toString();
         age = userAge.getText().toString();
 
+        Boolean result = false;
         if(name.isEmpty() && password.isEmpty() && email.isEmpty() && age.isEmpty())
         {
             Toast.makeText(this,"Please enter all the details", Toast.LENGTH_SHORT).show();
