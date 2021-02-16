@@ -83,28 +83,26 @@ public class Registration extends AppCompatActivity {
 
         regButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                if(validate())
-                {
-                    //upload data to database
+            public void onClick(View view) {
+                if(validate()){
                     String user_email = userEmail.getText().toString().trim();
                     String user_password = userPassword.getText().toString().trim();
 
-                    firebaseAuth.createUserWithEmailAndPassword(user_email,user_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    firebaseAuth.createUserWithEmailAndPassword(user_email, user_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
 
-                            if(task.isSuccessful()) {
-                                //sendEmailVerification();
-                                sendUserData();
-                                firebaseAuth.signOut();
-                                Toast.makeText(Registration.this, "Succesfully Registered,Upload Complete", Toast.LENGTH_SHORT).show();
-                                finish();
-                                startActivity(new Intent(Registration.this, MainActivity.class));
+                            if(task.isSuccessful()){
+                                sendEmailVerification();
+                                //sendUserData();
+                                //firebaseAuth.signOut();
+                                //Toast.makeText(ActivityRegistration.this, "Successfully Registered, Upload complete!", Toast.LENGTH_SHORT).show();
+                                //finish();
+                                //startActivity(new Intent(ActivityRegistration.this, ActivityLogin.class));
                             }else{
                                 Toast.makeText(Registration.this, "Registration Failed", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(Registration.this, MainActivity.class));
                             }
+
                         }
                     });
                 }
@@ -130,16 +128,16 @@ public class Registration extends AppCompatActivity {
         userProfilePic = (ImageView) findViewById(R.id.ivProfile);
     }
 
-    private Boolean validate()
-    {
+    private Boolean validate(){
+        Boolean result = false;
+
         name = userName.getText().toString();
         password = userPassword.getText().toString();
         email = userEmail.getText().toString();
         age = userAge.getText().toString();
 
-        Boolean result = false;
-        if(name.isEmpty() && password.isEmpty() && email.isEmpty() && age.isEmpty() && imagePath == null) {
-            Toast.makeText(this,"Please enter all the details", Toast.LENGTH_SHORT).show();
+        if(name.isEmpty() || password.isEmpty() || email.isEmpty() || age.isEmpty() || imagePath == null){
+            Toast.makeText(this, "Please enter all the details", Toast.LENGTH_SHORT). show();
         }else{
             result = true;
         }
@@ -170,22 +168,21 @@ public class Registration extends AppCompatActivity {
 
     private void sendUserData(){
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = firebaseDatabase.getReference(firebaseAuth.getUid());
+        DatabaseReference myRef = firebaseDatabase.getReference("UserInfo").child(firebaseAuth.getUid());
         StorageReference imageReference = storageReference.child(firebaseAuth.getUid()).child("Images").child("Profile Pic");
         UploadTask uploadTask = imageReference.putFile(imagePath);
         uploadTask.addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(Registration.this, "Upload Failed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Registration.this, "Upload failed", Toast.LENGTH_SHORT).show();
             }
         }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                Toast.makeText(Registration.this, "Upload Succesfully", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Registration.this, "Upload successful", Toast.LENGTH_SHORT).show();
             }
         });
-        UserProfile userProfile = new UserProfile (age, email, name);
-        myRef.setValue(userProfile);
+        UserProfile UserProfile = new UserProfile(age, email, name);
+        myRef.setValue(UserProfile);
     }
-
 }
