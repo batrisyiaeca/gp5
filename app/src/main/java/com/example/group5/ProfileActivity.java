@@ -1,6 +1,7 @@
 package com.example.group5;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -39,7 +40,6 @@ public class ProfileActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
     private FirebaseStorage firebaseStorage;
-    private ImageView updateProfilePic;
     private static int PICK_IMAGE = 123;
     Uri imagePath;
     private StorageReference storageReference;
