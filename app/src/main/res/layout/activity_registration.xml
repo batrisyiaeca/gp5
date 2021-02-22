@@ -87,9 +87,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/t_username"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.184" />
+        app:layout_constraintVertical_bias="0.215" />
 
     <EditText
         android:id="@+id/t_age"
@@ -109,11 +110,14 @@
 
     <ImageView
         android:id="@+id/ivProfile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="126dp"
+        android:layout_height="102dp"
         app:layout_constraintBottom_toTopOf="@+id/t_username"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.494"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_dark_focused" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
