@@ -61,6 +61,10 @@ public class SecondActivity extends AppCompatActivity {
             case R.id.AboutUsMenu:
                 startActivity(new Intent (SecondActivity.this,AboutUs.class));
                 break;
+
+            case R.id.ContactUsMenu:
+                startActivity(new Intent (SecondActivity.this,ContactUs.class));
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
