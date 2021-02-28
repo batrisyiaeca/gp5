@@ -28,8 +28,17 @@
     </item>
 
     <item
-        android:id="@+id/refreshMenu"
+        android:id="@+id/ContactUsMenu"
         android:orderInCategory="400"
+        app:showAsAction="never"
+        android:title="Contact Us">
+
+
+    </item>
+
+    <item
+        android:id="@+id/refreshMenu"
+        android:orderInCategory="500"
         app:showAsAction="never"
         android:title="Refresh">
 
