@@ -2,6 +2,7 @@ package com.example.group5;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +16,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class SecondActivity extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
-    private Button logout;
+    private CardView logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,12 +25,13 @@ public class SecondActivity extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
 
-        logout = (Button) findViewById(R.id.btn_logout);
+        logout = (CardView) findViewById(R.id.cv_logout);
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Logout();
+
 
             }
         });
@@ -49,23 +51,24 @@ public class SecondActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
-        switch(item.getItemId()){
-            case R.id.logoutMenu:{
+        switch(item.getItemId()) {
+            case R.id.logoutMenu: {
                 Logout();
                 break;
             }
             case R.id.profileMenu:
-                startActivity(new Intent(SecondActivity.this,ProfileActivity.class));
+                startActivity(new Intent(SecondActivity.this, ProfileActivity.class));
                 break;
 
             case R.id.AboutUsMenu:
-                startActivity(new Intent (SecondActivity.this,AboutUs.class));
+                startActivity(new Intent(SecondActivity.this, AboutUs.class));
                 break;
 
             case R.id.ContactUsMenu:
                 startActivity(new Intent (SecondActivity.this,ContactUs.class));
                 break;
         }
+
         return super.onOptionsItemSelected(item);
     }
 }
