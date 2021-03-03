@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#634444">
+
+    <Button
+        android:id="@+id/btnSubmitfb"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rectangle_btn"
+        android:text="Submit"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yourfeedback"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <EditText
+        android:id="@+id/tv_yourfeedback"
+        android:layout_width="321dp"
+        android:layout_height="142dp"
+        android:background="@drawable/rectangle"
+        android:breakStrategy="balanced"
+        android:fitsSystemWindows="true"
+        android:gravity="top"
+        android:hint="Your Message"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:paddingStart="15dp"
+        android:singleLine="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_namefb"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <EditText
+        android:id="@+id/tv_namefb"
+        android:layout_width="321dp"
+        android:layout_height="55dp"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvfeedback"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <TextView
+        android:id="@+id/tvfeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feedback"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101" />
+</androidx.constraintlayout.widget.ConstraintLayout>
