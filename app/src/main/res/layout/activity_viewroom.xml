@@ -12,35 +12,13 @@
         android:layout_margin="10dp"
         android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
-            android:background="@color/Yellowish">
-
-            <ImageView
-                android:id="@+id/backbtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:padding="15dp"
-                android:src="@drawable/abc_vector_test" />
-
-            <ImageView
-                android:id="@+id/iv_cart"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:layout_alignParentRight="true"
-                app:srcCompat="@drawable/cart" />
-
-
-        </RelativeLayout>
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:text="ROOM TYPE"
             android:textAllCaps="true"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -207,9 +185,7 @@
             android:layout_width="match_parent"
             android:layout_height="190dp"
             android:layout_margin="10dp"
-            android:background="@color/lightWhite"><![CDATA[>
-
-            ]]>
+            android:background="@color/lightWhite">
 
             <TextView
                 android:layout_width="wrap_content"

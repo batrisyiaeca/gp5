@@ -12,8 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
-        <activity android:name=".Receipt"></activity>
-        <activity android:name=".BookingForm" />
+        <activity android:name=".Receipt" />
         <activity android:name=".ContactUs" />
         <activity android:name=".AboutUs" />
         <activity android:name=".UpdatePassword" />

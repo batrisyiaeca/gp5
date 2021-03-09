@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#634444"
+    android:background="@drawable/homebg"
     tools:context=".SecondActivity">
 
     <TextView
         android:id="@+id/title_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="12dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
         android:text="WELCOME BACK"
         android:textColor="#fff"
         android:textSize="30sp"
@@ -23,7 +25,7 @@
         android:layout_height="600dp"
         android:layout_below="@id/title_view"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:columnCount="2"
@@ -31,7 +33,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cv_profile"
+            android:id="@+id/cv_viewroom"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_row="0"
@@ -53,19 +55,19 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/profile" />
+                    android:src="@drawable/room" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="PROFILE"
+                    android:text="VIEW ROOM"
                     android:textAlignment="center"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cv_viewroom"
+            android:id="@+id/cv_bookroom"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_row="0"
@@ -87,7 +89,7 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/room" />
+                    android:src="@drawable/cart" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -99,7 +101,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cv_cart"
+            android:id="@+id/cv_receipt"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_row="1"
@@ -126,14 +128,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="VIEW CART"
+                    android:text="VIEW RECEIPT"
                     android:textAlignment="center"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cv_orderhistory"
+            android:id="@+id/cv_feedback"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_row="1"
@@ -155,12 +157,12 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/cart" />
+                    android:src="@drawable/contactus" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ORDER HISTORY"
+                    android:text="FEEDBACK"
                     android:textAlignment="center"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -235,6 +237,31 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </GridLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="20dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_viewprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="294dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="7dp"
+        android:text="VIEW PROFILE >>"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>
