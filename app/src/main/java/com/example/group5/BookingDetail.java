@@ -2,7 +2,7 @@ package com.example.group5;
 
 public class BookingDetail {
 
-    String name, email, phone , time, date;
+    private String name, email, phone , time, date;
 
     public BookingDetail(){
 

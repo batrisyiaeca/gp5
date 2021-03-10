@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.text.Normalizer;
 
 
 public class BookingForm extends AppCompatActivity {
@@ -45,7 +46,7 @@ public class BookingForm extends AppCompatActivity {
                 name = nameForm.getEditableText().toString().trim();
                 storageReference = firebaseDatabase.getReference("Booking").child(name);
                 email = emailForm.getEditableText().toString().trim();
-                room = emailForm.getEditableText().toString().trim();
+                room = roomForm.getEditableText().toString().trim();
 
                 phone = phoneForm.getEditableText().toString().trim();
                 time = timeForm.getEditableText().toString().trim();
@@ -64,14 +65,15 @@ public class BookingForm extends AppCompatActivity {
        phone = phoneForm.getText().toString();
        time = timeForm.getText().toString();
        date = dateForm.getText().toString();
+       room = roomForm.getText().toString();
 
-       if(name.isEmpty() || email.isEmpty() || phone.isEmpty() || time.isEmpty() || date.isEmpty()){
+       if(name.isEmpty() || email.isEmpty() || phone.isEmpty() || time.isEmpty() || date.isEmpty() || room.isEmpty()){
            Toast.makeText(this,"Please enter all details",Toast.LENGTH_SHORT).show();
            startActivity(new Intent(BookingForm.this, BookingForm.class));
        }
        else{
            result = true;
-           Toast.makeText(this, "Booking Submitted", Toast.LENGTH_SHORT).show();
+           Toast.makeText(this, "Booking Successful", Toast.LENGTH_SHORT).show();
            startActivity(new Intent(BookingForm.this, Receipt.class));
        }
        return result;

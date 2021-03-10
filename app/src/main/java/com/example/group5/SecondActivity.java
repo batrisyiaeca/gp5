@@ -66,7 +66,7 @@ public class SecondActivity extends AppCompatActivity {
         viewCart.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                startActivity(new Intent(SecondActivity.this, CartActivity.class));
+                startActivity(new Intent(SecondActivity.this, Receipt.class));
             }
         });
     }

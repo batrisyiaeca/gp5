@@ -12,7 +12,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
-        <activity android:name=".CartActivity"></activity>
         <activity android:name=".Receipt" />
         <activity android:name=".ContactUs" />
         <activity android:name=".AboutUs" />
