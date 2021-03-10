@@ -1,6 +1,7 @@
 package com.example.group5;
 
 public class BookingDetail {
+
     private String name, email, phone , time, date;
 
     public BookingDetail(){

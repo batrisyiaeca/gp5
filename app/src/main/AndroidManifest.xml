@@ -20,6 +20,8 @@
         <activity android:name=".ProfileActivity" />
         <activity android:name=".PasswordActivity" />
         <activity android:name=".Registration" />
+        <activity android:name=".BookingForm"/>
+        <activity android:name=".ViewRoom"/>
         <activity android:name=".SecondActivity" />
         <activity android:name=".SplashScreen">
             <intent-filter>

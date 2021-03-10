@@ -1,5 +1,7 @@
 package com.example.group5;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -7,10 +9,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.text.Normalizer;
+
 
 public class BookingForm extends AppCompatActivity {
 
@@ -55,25 +58,24 @@ public class BookingForm extends AppCompatActivity {
     }
 
     private boolean validate(){
-        Boolean result = false;
+       Boolean result = false;
 
-        name = nameForm.getText().toString();
-        email = emailForm.getText().toString();
-        phone = phoneForm.getText().toString();
-        time = timeForm.getText().toString();
-        date = dateForm.getText().toString();
-        room = roomForm.getText().toString();
+       name = nameForm.getText().toString();
+       email = emailForm.getText().toString();
+       phone = phoneForm.getText().toString();
+       time = timeForm.getText().toString();
+       date = dateForm.getText().toString();
+       room = roomForm.getText().toString();
 
-        if(name.isEmpty() || email.isEmpty() || phone.isEmpty() || time.isEmpty() || date.isEmpty() || room.isEmpty()){
-            Toast.makeText(this,"Please enter all details",Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(BookingForm.this, BookingForm.class));
-        }
-        else{
-            result = true;
-            Toast.makeText(this, "Booking Successful", Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(BookingForm.this, Receipt.class));
-        }
-        return result;
+       if(name.isEmpty() || email.isEmpty() || phone.isEmpty() || time.isEmpty() || date.isEmpty() || room.isEmpty()){
+           Toast.makeText(this,"Please enter all details",Toast.LENGTH_SHORT).show();
+           startActivity(new Intent(BookingForm.this, BookingForm.class));
+       }
+       else{
+           result = true;
+           Toast.makeText(this, "Booking Successful", Toast.LENGTH_SHORT).show();
+           startActivity(new Intent(BookingForm.this, Receipt.class));
+       }
+       return result;
     }
-
 }

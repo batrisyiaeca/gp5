@@ -37,6 +37,24 @@
     </item>
 
     <item
+        android:id="@+id/ViewRoomMenu"
+        android:orderInCategory="400"
+        app:showAsAction="never"
+        android:title="View Room">
+
+
+    </item>
+
+    <item
+        android:id="@+id/BookingFormMenu"
+        android:orderInCategory="400"
+        app:showAsAction="never"
+        android:title="Booking Form">
+
+
+    </item>
+
+    <item
         android:id="@+id/refreshMenu"
         android:orderInCategory="500"
         app:showAsAction="never"
