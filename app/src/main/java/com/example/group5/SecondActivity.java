@@ -62,13 +62,6 @@ public class SecondActivity extends AppCompatActivity {
                 startActivity(new Intent(SecondActivity.this, ViewRoom.class));
             }
         });
-
-        viewCart.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                startActivity(new Intent(SecondActivity.this, Receipt.class));
-            }
-        });
     }
 
     private void Logout(){
@@ -101,6 +94,12 @@ public class SecondActivity extends AppCompatActivity {
             case R.id.ContactUsMenu:
                 startActivity(new Intent (SecondActivity.this,ContactUs.class));
                 break;
+
+            case R.id.ViewRoomMenu:
+                startActivity(new Intent(SecondActivity.this, ViewRoom.class));
+
+            case R.id.BookingFormMenu:
+                startActivity(new Intent(SecondActivity.this, BookingForm.class));
         }
 
         return super.onOptionsItemSelected(item);
