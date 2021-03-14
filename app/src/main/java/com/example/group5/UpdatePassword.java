@@ -3,6 +3,7 @@ package com.example.group5;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -47,6 +48,9 @@ public class UpdatePassword extends AppCompatActivity {
                         if(task.isSuccessful()){
                             Toast.makeText(UpdatePassword.this,"Password Changed",Toast.LENGTH_SHORT).show();
                             finish();
+                        }
+                        else{
+                            Toast.makeText(UpdatePassword.this, "Please enter a minimum of 6 character password",Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

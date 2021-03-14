@@ -40,7 +40,7 @@
         app:layout_constraintVertical_bias="0.956" />
 
     <TextView
-        android:id="@+id/tvProfileAge2"
+        android:id="@+id/tvProfileAge"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:background="@drawable/passwordbox"
@@ -83,7 +83,7 @@
         android:textColor="#FE6786"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/tvProfileAge2"
+        app:layout_constraintBottom_toTopOf="@+id/tvProfileAge"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"

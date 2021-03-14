@@ -10,14 +10,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 
 public class SecondActivity extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
-    private CardView logout;
-    private CardView profile, contactUs, viewRoom, viewCart;
+    private CardView contactUs, viewRoom, logout, bookForm, viewReceipt;
+    private TextView profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,10 +28,11 @@ public class SecondActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
 
         logout = (CardView) findViewById(R.id.cv_logout);
-        profile = (CardView) findViewById(R.id.cv_profile);
+        profile = (TextView) findViewById(R.id.tv_viewprofile);
         contactUs = (CardView) findViewById(R.id.cv_contactus);
         viewRoom = (CardView) findViewById(R.id.cv_viewroom);
-        viewCart = (CardView) findViewById(R.id.cv_cart);
+        bookForm = (CardView) findViewById(R.id.cv_bookroom);
+        viewReceipt = (CardView) findViewById(R.id.cv_receipt);
 
 
         logout.setOnClickListener(new View.OnClickListener() {
@@ -60,6 +62,20 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 startActivity(new Intent(SecondActivity.this, ViewRoom.class));
+            }
+        });
+
+        bookForm.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                startActivity(new Intent(SecondActivity.this, BookingForm.class));
+            }
+        });
+
+        viewReceipt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SecondActivity.this, Receipt.class));
             }
         });
     }

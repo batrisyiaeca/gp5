@@ -2,17 +2,17 @@ package com.example.group5;
 
 public class BookingDetail {
 
-    private String name, email, phone , time, date;
+    private String name, email, phone , room, date;
 
     public BookingDetail(){
 
     }
 
-    public BookingDetail(String name, String email, String phone, String time, String date){
+    public BookingDetail(String name, String email, String phone, String room, String date){
         this.name = name;
         this.email = email;
         this.phone = phone;
-        this.time = time;
+        this.room = room;
         this.date = date;
     }
 
@@ -40,12 +40,12 @@ public class BookingDetail {
         this.phone = phone;
     }
 
-    public String getTime() {
-        return time;
+    public String getRoom() {
+        return room;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    public void setRoom(String room) {
+        this.room = room;
     }
 
     public String getDate() {

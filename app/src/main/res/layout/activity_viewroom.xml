@@ -39,7 +39,7 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/bookbtn1"
                 android:layout_width="120dp"
                 android:layout_height="40dp"
                 android:layout_alignParentEnd="true"
@@ -63,7 +63,7 @@
                 android:id="@+id/textView"
                 android:layout_width="100dp"
                 android:layout_height="90dp"
-                android:layout_above="@+id/button"
+                android:layout_above="@+id/bookbtn1"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="242dp"
                 android:layout_marginBottom="-1dp"
@@ -92,7 +92,7 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/bookbtn2"
                 android:layout_width="120dp"
                 android:layout_height="40dp"
                 android:layout_alignParentEnd="true"
@@ -116,7 +116,7 @@
                 android:id="@+id/textView1"
                 android:layout_width="100dp"
                 android:layout_height="90dp"
-                android:layout_above="@+id/button1"
+                android:layout_above="@+id/bookbtn2"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="242dp"
                 android:layout_marginBottom="-1dp"
@@ -145,7 +145,7 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/bookbtn3"
                 android:layout_width="120dp"
                 android:layout_height="40dp"
                 android:layout_alignParentEnd="true"
@@ -169,7 +169,7 @@
                 android:id="@+id/textView2"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
-                android:layout_above="@+id/button2"
+                android:layout_above="@+id/bookbtn3"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="231dp"
                 android:layout_marginBottom="-1dp"
@@ -212,7 +212,7 @@
                 android:id="@+id/textView3"
                 android:layout_width="100dp"
                 android:layout_height="90dp"
-                android:layout_above="@+id/button3"
+                android:layout_above="@+id/bookbtn4"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="242dp"
                 android:layout_marginBottom="3dp"
@@ -222,7 +222,7 @@
                 android:textAlignment="center" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/bookbtn4"
                 android:layout_width="120dp"
                 android:layout_height="40dp"
                 android:layout_alignParentEnd="true"

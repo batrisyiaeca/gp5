@@ -1,3 +1,10 @@
 <resources>
+    <string name="room_type">Room Type, Spinner View Activity</string>
     <string name="app_name">Group5</string>
+    <string-array name="room_array">
+        <item>Single Room</item>
+        <item>Double Room</item>
+        <item>Deluxe Room</item>
+        <item>Twin Room</item>
+    </string-array>
 </resources>

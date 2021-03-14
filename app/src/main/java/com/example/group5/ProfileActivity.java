@@ -44,6 +44,7 @@ public class ProfileActivity extends AppCompatActivity {
     Uri imagePath;
     private StorageReference storageReference;
 
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == PICK_IMAGE && resultCode == RESULT_OK && data.getData() != null){

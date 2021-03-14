@@ -138,7 +138,13 @@ public class Registration extends AppCompatActivity {
 
         if(name.isEmpty() || password.isEmpty() || email.isEmpty() || age.isEmpty() || imagePath == null){
             Toast.makeText(this, "Please enter all the details", Toast.LENGTH_SHORT). show();
-        }else{
+        }
+
+        else if(password.length() < 6){
+            Toast.makeText(this,"Please enter a minimum of 6 character password", Toast.LENGTH_SHORT).show();;
+        }
+
+        else{
             result = true;
         }
 
