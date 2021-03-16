@@ -3,69 +3,61 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/profilebg">
+    android:background="@drawable/feedbackbg">
 
     <Button
-        android:id="@+id/btnSubmitfb"
+        android:id="@+id/btnsubmitfb"
         android:layout_width="100dp"
         android:layout_height="40dp"
-        android:background="@drawable/rectangle_btn"
-        android:text="Submit"
-        android:textColor="@color/black"
+        android:background="@drawable/longbtn"
+        android:text="SUBMIT"
+        android:textColor="#3C3451"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.588"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_yourfeedback"
-        app:layout_constraintVertical_bias="0.48" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_fb"
+        app:layout_constraintVertical_bias="0.813" />
 
     <EditText
-        android:id="@+id/tv_yourfeedback"
-        android:layout_width="321dp"
-        android:layout_height="142dp"
-        android:background="@drawable/rectangle"
+        android:id="@+id/tv_fb"
+        android:layout_width="270dp"
+        android:layout_height="253dp"
+        android:background="@drawable/fbbox"
         android:breakStrategy="balanced"
         android:fitsSystemWindows="true"
         android:gravity="top"
         android:hint="Your Message"
         android:inputType="textMultiLine"
-        android:padding="5dp"
-        android:paddingStart="15dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
         android:singleLine="false"
-        android:textColor="#FFFFFF"
+        android:textColor="#3C3451"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.687"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_namefb"
-        app:layout_constraintVertical_bias="0.149" />
+        app:layout_constraintVertical_bias="0.222" />
 
     <EditText
         android:id="@+id/tv_namefb"
-        android:layout_width="321dp"
+        android:layout_width="270dp"
         android:layout_height="55dp"
         android:background="@drawable/rectangle"
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
-        android:paddingStart="15dp"
-        android:textColor="#FFFFFF"
+        android:paddingLeft="20dp"
+        android:textColor="#3C3451"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvfeedback"
-        app:layout_constraintVertical_bias="0.319" />
-
-    <TextView
-        android:id="@+id/tvfeedback"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Feedback"
-        android:textColor="#FFFFFF"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.684"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.188" />
+        app:layout_constraintVertical_bias="0.386" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

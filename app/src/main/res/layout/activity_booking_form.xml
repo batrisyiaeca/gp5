@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#634444"
+    android:background="@drawable/bookingbg"
     tools:context=".BookingForm">
 
     <TextView
         android:id="@+id/tvBookingForm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Booking Form"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,15 +25,15 @@
         android:layout_height="40dp"
         android:background="@drawable/rectangle"
         android:ems="10"
-        android:hint="Name"
         android:inputType="textPersonName"
         android:paddingStart="15dp"
+        android:textColor="#3C3451"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvBookingForm"
-        app:layout_constraintVertical_bias="0.091" />
+        app:layout_constraintVertical_bias="0.103" />
 
     <EditText
         android:id="@+id/tvPhone"
@@ -42,15 +41,15 @@
         android:layout_height="40dp"
         android:background="@drawable/rectangle"
         android:ems="10"
-        android:hint="Phone No."
         android:inputType="phone"
         android:paddingStart="15dp"
+        android:textColor="#3C3451"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvEmail"
-        app:layout_constraintVertical_bias="0.077" />
+        app:layout_constraintVertical_bias="0.177" />
 
     <EditText
         android:id="@+id/tvEmail"
@@ -58,41 +57,43 @@
         android:layout_height="40dp"
         android:background="@drawable/rectangle"
         android:ems="10"
-        android:hint="Email"
         android:inputType="textEmailAddress"
         android:paddingStart="15dp"
+        android:textColor="#3C3451"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvName"
-        app:layout_constraintVertical_bias="0.064" />
+        app:layout_constraintVertical_bias="0.143" />
 
     <Button
         android:id="@+id/btnSubmitForm"
         android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginBottom="36dp"
-        android:background="@drawable/rectangle_btn"
+        android:layout_height="40dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/longbtn"
         android:text="Submit"
+        android:textColor="#3C3451"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhone"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Spinner
         android:id="@+id/spRoomType"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="264dp"
-        android:background="@drawable/rectangle"
+        android:background="@drawable/roombtn"
         android:drawSelectorOnTop="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnSubmitForm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvPhone"
-        app:layout_constraintVertical_bias="0.462" />
+        app:layout_constraintVertical_bias="0.277" />
 
     <TextView
         android:id="@+id/tvDateForm"
@@ -100,14 +101,14 @@
         android:layout_height="40dp"
         android:background="@drawable/rectangle"
         android:gravity="fill_vertical"
-        android:hint="Select Date"
         android:paddingStart="15dp"
+        android:textColor="#3C3451"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spRoomType"
-        app:layout_constraintVertical_bias="0.104" />
+        app:layout_constraintVertical_bias="0.424" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -54,7 +55,9 @@ public class Receipt extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError error) {
                 Toast.makeText(Receipt.this, error.getCode(), Toast.LENGTH_SHORT).show();
             }
+
         });
+
     }
 
 }

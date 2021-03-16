@@ -16,7 +16,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="12dp"
         android:text="WELCOME BACK"
-        android:textColor="#fff"
+        android:textColor="#3C3451"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -41,6 +41,7 @@
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
+            app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -62,6 +63,7 @@
                     android:layout_height="match_parent"
                     android:text="VIEW ROOM"
                     android:textAlignment="center"
+                    android:textColor="#3C3451"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -75,6 +77,7 @@
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
+            app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -89,13 +92,14 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/cart" />
+                    android:src="@drawable/booking" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="BOOK ROOM"
                     android:textAlignment="center"
+                    android:textColor="#3C3451"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -109,6 +113,7 @@
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
+            app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -130,6 +135,7 @@
                     android:layout_height="wrap_content"
                     android:text="VIEW RECEIPT"
                     android:textAlignment="center"
+                    android:textColor="#3C3451"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -143,6 +149,7 @@
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
+            app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -157,13 +164,14 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/contactus" />
+                    android:src="@drawable/feedback" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="FEEDBACK"
                     android:textAlignment="center"
+                    android:textColor="#3C3451"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -178,6 +186,7 @@
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
+            app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -199,6 +208,7 @@
                     android:layout_height="wrap_content"
                     android:text="CONTACT US"
                     android:textAlignment="center"
+                    android:textColor="#3C3451"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -212,6 +222,7 @@
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
+            app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -233,19 +244,26 @@
                     android:layout_height="wrap_content"
                     android:text="LOG OUT"
                     android:textAlignment="center"
+                    android:textColor="#3C3451"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </GridLayout>
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginStart="83dp"
         android:layout_marginTop="11dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginBottom="92dp"
+        android:layout_toEndOf="@+id/title_view"
+        android:src="@drawable/profile"
+        app:civ_border_color="#3C3451"
+        app:civ_border_width="2dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -255,11 +273,12 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="294dp"
-        android:layout_marginTop="127dp"
-        android:layout_marginEnd="7dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="7dp"
         android:text="VIEW PROFILE >>"
-        android:textColor="#fff"
+        android:textColor="#3C3451"
         android:textSize="14sp"
         android:textStyle="bold" />
 

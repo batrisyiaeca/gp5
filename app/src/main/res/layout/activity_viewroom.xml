@@ -18,23 +18,26 @@
             android:padding="10dp"
             android:text="ROOM TYPE"
             android:textAllCaps="true"
-            android:textColor="#FFFFFF"
-            android:textSize="30sp"
+            android:textColor="#544B6B"
+            android:textSize="40sp"
             android:textStyle="bold" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="190dp"
             android:layout_margin="10dp"
-            android:background="@color/lightWhite">
+            android:background="@color/white">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="224dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="214dp"
                 android:padding="20dp"
                 android:text="Single Room"
+                android:textColor="#544B6B"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -49,13 +52,17 @@
                 android:background="@drawable/rectangle_btn"
                 android:text="Book Now"
                 android:textAlignment="center"
+                android:textColor="#544B6B"
                 android:textSize="12sp" />
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="200dp"
                 android:layout_height="150dp"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="8dp"
                 android:paddingTop="20dp"
                 app:srcCompat="@drawable/single" />
 
@@ -70,7 +77,8 @@
                 android:maxLines="10"
                 android:paddingTop="20dp"
                 android:text="1 bed \n RM110 Per Night"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="#544B6B" />
 
 
         </RelativeLayout>
@@ -79,7 +87,7 @@
             android:layout_width="match_parent"
             android:layout_height="190dp"
             android:layout_margin="10dp"
-            android:background="@color/lightWhite">
+            android:background="@color/white">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -88,6 +96,7 @@
                 android:layout_marginEnd="212dp"
                 android:padding="20dp"
                 android:text="Double Room"
+                android:textColor="#544B6B"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -102,15 +111,19 @@
                 android:background="@drawable/rectangle_btn"
                 android:text="Book Now"
                 android:textAlignment="center"
+                android:textColor="#544B6B"
                 android:textSize="12sp" />
 
             <ImageView
                 android:id="@+id/imageView5"
-                android:layout_width="200dp"
+                android:layout_width="180dp"
                 android:layout_height="150dp"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="16dp"
                 android:paddingTop="20dp"
-                app:srcCompat="@drawable/single" />
+                app:srcCompat="@drawable/room2" />
 
             <TextView
                 android:id="@+id/textView1"
@@ -123,7 +136,8 @@
                 android:maxLines="10"
                 android:paddingTop="20dp"
                 android:text="1 bed \n RM200 Per Night"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="#544B6B" />
 
 
         </RelativeLayout>
@@ -132,7 +146,7 @@
             android:layout_width="match_parent"
             android:layout_height="190dp"
             android:layout_margin="10dp"
-            android:background="@color/lightWhite">
+            android:background="@color/white">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -141,6 +155,7 @@
                 android:layout_marginEnd="212dp"
                 android:padding="20dp"
                 android:text="Deluxe Room"
+                android:textColor="#544B6B"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -155,15 +170,19 @@
                 android:background="@drawable/rectangle_btn"
                 android:text="Book Now"
                 android:textAlignment="center"
+                android:textColor="#544B6B"
                 android:textSize="12sp" />
 
             <ImageView
                 android:id="@+id/imageView6"
-                android:layout_width="200dp"
+                android:layout_width="180dp"
                 android:layout_height="150dp"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
                 android:paddingTop="20dp"
-                app:srcCompat="@drawable/single" />
+                app:srcCompat="@drawable/room3" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -176,7 +195,8 @@
                 android:maxLines="10"
                 android:paddingTop="20dp"
                 android:text="Well furnished room with 1 bed \n RM340 Per Night"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="#544B6B" />
 
 
         </RelativeLayout>
@@ -185,7 +205,7 @@
             android:layout_width="match_parent"
             android:layout_height="190dp"
             android:layout_margin="10dp"
-            android:background="@color/lightWhite">
+            android:background="@color/white">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -196,17 +216,20 @@
                 android:layout_marginEnd="227dp"
                 android:padding="20dp"
                 android:text="Twin Room"
+                android:textColor="#544B6B"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageView7"
-                android:layout_width="200dp"
+                android:layout_width="190dp"
                 android:layout_height="150dp"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="11dp"
                 android:paddingTop="20dp"
-                app:srcCompat="@drawable/single" />
+                app:srcCompat="@drawable/room4" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -219,7 +242,8 @@
                 android:maxLines="10"
                 android:paddingTop="20dp"
                 android:text="2 single bed \n RM300 Per Night"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="#544B6B" />
 
             <Button
                 android:id="@+id/bookbtn4"
@@ -232,6 +256,7 @@
                 android:background="@drawable/rectangle_btn"
                 android:text="Book Now"
                 android:textAlignment="center"
+                android:textColor="#544B6B"
                 android:textSize="12sp" />
         </RelativeLayout>
 

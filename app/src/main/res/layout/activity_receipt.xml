@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/invoicebg"
     tools:context=".Receipt">
 
     <TextView
         android:id="@+id/tvInvoice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Invoice"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -22,114 +22,124 @@
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name"
+        android:text="NAME"
+        android:textColor="#3C3451"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintHorizontal_bias="0.31"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvInvoice"
-        app:layout_constraintVertical_bias="0.126" />
+        app:layout_constraintVertical_bias="0.159" />
 
     <TextView
         android:id="@+id/tv_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email"
+        android:text="EMAIL"
+        android:textColor="#3C3451"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintHorizontal_bias="0.308"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_bookingName"
-        app:layout_constraintVertical_bias="0.036" />
+        app:layout_constraintVertical_bias="0.064" />
 
     <TextView
         android:id="@+id/tv_phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Phone No."
+        android:text="PHONE NO."
+        android:textColor="#3C3451"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintHorizontal_bias="0.323"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_bookingEmail"
-        app:layout_constraintVertical_bias="0.044" />
+        app:layout_constraintVertical_bias="0.084" />
 
     <TextView
         android:id="@+id/tv_bookingName"
-        android:layout_width="68dp"
+        android:layout_width="270dp"
         android:layout_height="25dp"
+        android:textColor="#3C3451"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintHorizontal_bias="0.822"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_name"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.017" />
 
     <TextView
         android:id="@+id/tv_bookingEmail"
-        android:layout_width="68dp"
+        android:layout_width="270dp"
         android:layout_height="25dp"
+        android:textColor="#3C3451"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintHorizontal_bias="0.794"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_email"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.034" />
 
     <TextView
         android:id="@+id/tvBookingPhone"
-        android:layout_width="68dp"
+        android:layout_width="270dp"
         android:layout_height="25dp"
+        android:textColor="#3C3451"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintHorizontal_bias="0.794"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_phone"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Room Type"
+        android:text="ROOM TYPE"
+        android:textColor="#3C3451"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintHorizontal_bias="0.329"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvBookingPhone"
-        app:layout_constraintVertical_bias="0.064" />
+        app:layout_constraintVertical_bias="0.093" />
 
     <TextView
         android:id="@+id/tvBookingRoom"
-        android:layout_width="68dp"
+        android:layout_width="270dp"
         android:layout_height="25dp"
+        android:textColor="#3C3451"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintHorizontal_bias="0.794"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.043" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Date"
+        android:text="DATE"
+        android:textColor="#3C3451"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintHorizontal_bias="0.303"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvBookingRoom"
-        app:layout_constraintVertical_bias="0.086" />
+        app:layout_constraintVertical_bias="0.133" />
 
     <TextView
         android:id="@+id/tvBookingDate"
-        android:layout_width="68dp"
+        android:layout_width="270dp"
         android:layout_height="25dp"
+        android:textColor="#3C3451"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintHorizontal_bias="0.822"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.082" />
 </androidx.constraintlayout.widget.ConstraintLayout>
