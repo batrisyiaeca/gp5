@@ -35,7 +35,7 @@ import java.io.IOException;
 public class SecondActivity extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
-    private CardView contactUs, viewRoom, logout, bookForm, viewReceipt, feedback;
+    private CardView contactUs, viewRoom, logout, bookForm, viewReceipt, feedback, aboutus;
     private TextView profile;
     private ImageView profilepic2;
     private FirebaseDatabase firebaseDatabase;
@@ -66,7 +66,7 @@ public class SecondActivity extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
 
-        logout = (CardView) findViewById(R.id.cv_logout);
+        aboutus= (CardView) findViewById(R.id.cv_aboutus);
         profile = (TextView) findViewById(R.id.tv_viewprofile);
         contactUs = (CardView) findViewById(R.id.cv_contactus);
         viewRoom = (CardView) findViewById(R.id.cv_viewroom);
@@ -118,10 +118,10 @@ public class SecondActivity extends AppCompatActivity {
             }
         });
 
-        logout.setOnClickListener(new View.OnClickListener() {
+        aboutus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Logout();
+                startActivity(new Intent(SecondActivity.this, AboutUs.class));
 
             }
         });
@@ -179,6 +179,17 @@ public class SecondActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
+    }
+
+    public boolean onOptionsItemSelected (MenuItem item) {
+
+        switch(item.getItemId()){
+            case R.id.logoutMenu: {
+                Logout();
+            }
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
 }
