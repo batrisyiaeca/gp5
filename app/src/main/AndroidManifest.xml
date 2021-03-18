@@ -12,18 +12,30 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
-        <activity android:name=".Receipt" />
-        <activity android:name=".Feedback" />
-        <activity android:name=".ContactUs" />
-        <activity android:name=".AboutUs" />
-        <activity android:name=".UpdatePassword" />
-        <activity android:name=".UpdateProfile" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".PasswordActivity" />
-        <activity android:name=".Registration" />
-        <activity android:name=".BookingForm"/>
-        <activity android:name=".ViewRoom"/>
-        <activity android:name=".SecondActivity" />
+        <activity android:name=".Receipt"
+            android:label="Receipt"/>
+        <activity android:name=".Feedback"
+           android:label="Feedback"/>
+        <activity android:name=".ContactUs"
+            android:label="Contact Us"/>
+        <activity android:name=".AboutUs"
+            android:label="About Us"/>
+        <activity android:name=".UpdatePassword"
+            android:label="Update Password "/>
+        <activity android:name=".UpdateProfile"
+            android:label="Update Profile"/>
+        <activity android:name=".ProfileActivity"
+            android:label="Profile"/>
+        <activity android:name=".PasswordActivity"
+            android:label="Password"/>
+        <activity android:name=".Registration"
+            android:label="Registration"/>
+        <activity android:name=".BookingForm"
+            android:label="Booking"/>
+        <activity android:name=".ViewRoom"
+            android:label="View Room"/>
+        <activity android:name=".SecondActivity"
+            android:label="Home"/>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,7 +43,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:label="Login"/>
     </application>
 
 </manifest>
