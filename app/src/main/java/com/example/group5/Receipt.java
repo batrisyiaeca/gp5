@@ -35,6 +35,8 @@ public class Receipt extends AppCompatActivity {
         bookingRoom = (TextView) findViewById(R.id.tvBookingRoom);
         bookingDate = (TextView) findViewById(R.id.tvBookingDate);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
 

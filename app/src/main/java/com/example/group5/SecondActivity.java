@@ -75,7 +75,7 @@ public class SecondActivity extends AppCompatActivity {
         profilepic2 = findViewById(R.id.iv_profile);
         feedback = (CardView) findViewById(R.id.cv_feedback);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();

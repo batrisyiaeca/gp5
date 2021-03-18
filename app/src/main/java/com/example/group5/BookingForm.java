@@ -55,6 +55,8 @@ public class BookingForm extends AppCompatActivity {
 
         roomForm = findViewById(R.id.spRoomType);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         dateForm = (TextView) findViewById(R.id.tvDateForm);
 
         submitForm = findViewById(R.id.btnSubmitForm);
